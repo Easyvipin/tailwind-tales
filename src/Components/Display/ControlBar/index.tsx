@@ -69,7 +69,25 @@ const ControlBar: React.FunctionComponent<IControlBarProps> = (props) => {
           <div className="h-[100%] border-[0.1px] border-black flex-1 rounded-xl  backdrop-blur-sm shadow-inner-light shadow-gray-300"></div>
         </div>
         <div className="h-[17%] mt-2 px-2">
-          <div className="h-[100%] border-[0.1px] border-black flex-1 rounded-xl backdrop-blur-sm  shadow-inner-light shadow-gray-300"></div>
+          <div className="h-[100%] border-[0.1px] border-black flex-1 flex justify-start  rounded-xl backdrop-blur-sm  shadow-inner-light shadow-gray-300 py-3 px-2 gap-2">
+            <img className="rounded-md" src="/benee.jpg" alt="" />
+            <div className="relative flex-2">
+              <h5 className=" text-gray-200 text-sm font-semibold">
+                Find an Island
+              </h5>
+              <span className="text-gray-400 text-xs font-semibold block">
+                BENEE
+              </span>
+            </div>
+            <div className="flex justify-center gap-2 flex-1">
+              <button className="block">
+                <img src="/play.svg" alt="" />
+              </button>
+              <button className="block">
+                <img src="/nextplay.svg" alt="" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
