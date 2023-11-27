@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 interface IControlBarProps {}
 
 const ControlBar: React.FunctionComponent<IControlBarProps> = (props) => {
@@ -9,7 +9,7 @@ const ControlBar: React.FunctionComponent<IControlBarProps> = (props) => {
   );
 
   return (
-    <div className="flex justify-center items-center w-full h-full bg-[url('/2120.png')] bg-cover">
+    <div className="flex justify-center items-center w-full h-full bg-[url('/2115.png')] bg-cover">
       <div className="w-[21rem] h-[25rem] border-[0.4px]  rounded-2xl bg-gray-900 bg-opacity-30 shadow-inner-light  shadow-gray-300 border-gray-500 backdrop-contrast-60 backdrop-blur-md box-border">
         <div className="flex gap-3 h-[42%] py-2 px-2">
           <div className="h-[100%] border-[0.1px] border-black flex-1 rounded-xl backdrop-blur-sm shadow-inner-light shadow-gray-300 px-2 py-3">
@@ -55,7 +55,7 @@ const ControlBar: React.FunctionComponent<IControlBarProps> = (props) => {
             </div>
           </div>
           <div className="h-[100%] flex-1 flex gap-2 flex-col">
-            <div className="border-[0.1px]border-black flex-1 rounded-xl backdrop-blur-sm shadow-inner-light shadow-gray-300"></div>
+            <div className="border-[0.1px] border-black flex-1 rounded-xl backdrop-blur-sm shadow-inner-light shadow-gray-300"></div>
             <div className="flex flex-1 gap-2">
               <div className="flex-1 border-[0.1px] border-black rounded-xl backdrop-blur-sm shadow-inner-light shadow-gray-300"></div>
               <div className="flex-1 border-[0.1px] border-black rounded-xl backdrop-blur-sm shadow-inner-light shadow-gray-300"></div>
@@ -63,7 +63,7 @@ const ControlBar: React.FunctionComponent<IControlBarProps> = (props) => {
           </div>
         </div>
         <div className="h-[17%] px-2">
-          <div className="h-[100%] border-[0.1px] border-black flex-1 rounded-xl backdrop-blur-sm  shadow-inner-light shadow-gray-300"></div>
+          <div className="h-[100%] border-[0.1px] border-black flex-1 rounded-xl backdrop-blur-sm  shadow-inner-light shadow-gray-300 py-1 px-2"></div>
         </div>
         <div className="h-[17%] mt-2 px-2">
           <div className="h-[100%] border-[0.1px] border-black flex-1 rounded-xl  backdrop-blur-sm shadow-inner-light shadow-gray-300"></div>
@@ -71,19 +71,19 @@ const ControlBar: React.FunctionComponent<IControlBarProps> = (props) => {
         <div className="h-[17%] mt-2 px-2">
           <div className="h-[100%] border-[0.1px] border-black flex-1 flex justify-start  rounded-xl backdrop-blur-sm  shadow-inner-light shadow-gray-300 py-3 px-2 gap-2">
             <img className="rounded-md" src="/benee.jpg" alt="" />
-            <div className="relative flex-2">
-              <h5 className=" text-gray-200 text-sm font-semibold">
+            <div className="relative flex-1">
+              <h5 className=" text-gray-100 text-sm font-semibold">
                 Find an Island
               </h5>
               <span className="text-gray-400 text-xs font-semibold block">
                 BENEE
               </span>
             </div>
-            <div className="flex justify-center gap-2 flex-1">
-              <button className="block">
+            <div className="flex gap-2 justify-start flex-2">
+              <button className="block ">
                 <img src="/play.svg" alt="" />
               </button>
-              <button className="block">
+              <button className="block mr-2 ">
                 <img src="/nextplay.svg" alt="" />
               </button>
             </div>
